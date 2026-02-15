@@ -8,9 +8,7 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-slate-700 flex flex-col w-full max-w-[320px] mx-auto">
-      {/* Header Compacto - Reduzido para h-24 */}
-      <div className="h-24 bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white relative px-4 overflow-hidden shrink-0">
-        {/* Ícone de fundo ainda menor */}
+      <div className="h-24 bg-linear-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white relative px-4 overflow-hidden shrink-0">
         <FaCode
           size={50}
           className="absolute -bottom-1 -right-1 opacity-10 -rotate-12"

@@ -23,12 +23,21 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Buscador",
+      title: "Buscador de endereço",
       description:
-        "O buscador de cep retorna um endereço assim que um cep é pesquisado",
-      technologies: ["React", "Jest", "Eslint"],
+        "Projeto feito em React.js, ele retorna um endereço assim que um cep é pesquisado",
+      technologies: ["React", "Axios", "Api Viacep", "Jest", "Eslint"],
       githubUrl: "https://github.com/rafajperez/buscador",
       deployUrl: "https://buscador-tau-one.vercel.app/",
+    },
+    {
+      id: 4,
+      title: "Site para Imobiliaria",
+      description: "Projeto feito em React.js com react-router-dom, ",
+      technologies: ["React", "Axios", "react-router-dom v6", "Eslint"],
+      githubUrl: "https://github.com/rafajperez/site_imobiliaria_reactjs",
+      deployUrl:
+        "https://site-imobiliaria-reactjs-8ur9-j7s9uz7xp-rafajperez.vercel.app/",
     },
   ];
 
@@ -43,7 +52,7 @@ const Projects = () => {
         </header>
 
         {/* Aqui está o segredo: O grid chama o componente pronto */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {myProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
