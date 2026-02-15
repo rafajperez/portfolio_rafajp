@@ -6,7 +6,8 @@ const Projects = () => {
     {
       id: 1,
       title: "Coffee Shop",
-      description: "E-commerce completo com Firebase e React.ts",
+      description:
+        "E-commerce completo feito no React.ts, com login/logout, validação com Firebase e banco de dados no Firestore",
       technologies: ["React", "TypeScript", "Firebase", "Tailwind"],
       githubUrl: "https://github.com/rafajperez/e-commerce",
       deployUrl: "https://e-commerce-six-brown.vercel.app/",
