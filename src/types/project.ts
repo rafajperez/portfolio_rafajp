@@ -4,6 +4,6 @@ export interface Project {
   description: string;
   technologies: string[];
   githubUrl: string;
-  deployUrl?: string; // Opcional, caso o projeto não esteja rodando
+  deployUrl?: string;
   imageUrl?: string;
 }

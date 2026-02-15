@@ -22,12 +22,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           />
         ) : (
           <div className="relative z-10 flex items-center gap-3">
-            {/* Círculo do ícone bem pequeno agora */}
             <div className="bg-white/20 p-2 rounded-lg backdrop-blur-md border border-white/30 shadow-sm">
               <FaCode size={16} className="text-white" />
             </div>
 
-            {/* Nome do projeto ao lado do ícone */}
             <span className="text-sm font-bold uppercase tracking-widest drop-shadow-sm">
               {project.title}
             </span>
@@ -39,7 +37,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         </span>
       </div>
 
-      {/* Conteúdo Proporcional */}
       <div className="p-4 flex flex-col gap-3">
         <div>
           <h3 className="text-base font-bold text-slate-800 dark:text-white leading-tight">
@@ -50,7 +47,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </p>
         </div>
 
-        {/* Tags */}
         <div className="flex flex-wrap gap-1">
           {project.technologies.map((tech) => (
             <span
@@ -62,7 +58,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           ))}
         </div>
 
-        {/* Rodapé */}
         <div className="flex justify-between items-center pt-3 border-t border-gray-100 dark:border-slate-700 mt-1">
           <a
             href={project.githubUrl}
